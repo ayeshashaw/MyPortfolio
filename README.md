@@ -29,7 +29,7 @@ A modern, responsive personal portfolio website built with React and Vite. This 
 ### Installation 🔧
 1. Clone the repository
 ```bash
-git clone [https://github.com/ayeshashaw/MyPortfolio.git]
+git clone https://github.com/ayeshashaw/MyPortfolio.git
 ```
 
 2. Navigate to project directory
