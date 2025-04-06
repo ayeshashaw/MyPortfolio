@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react';
 import '../styles/About.css'
+import photo from '../assets/photo.jpeg';
+
 
 const About = () => {
   const aboutRef = useRef(null);
@@ -69,7 +71,7 @@ const About = () => {
           <div className="about-image-container fade-in delay-3">
             <div className="about-image">
               <div className="image-placeholder">
-                <img src="/src/assets/photo.jpeg" alt="profile image" />
+                <img src={photo} alt="profile image" />
               </div>
             </div>
           </div>
