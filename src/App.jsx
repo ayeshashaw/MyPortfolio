@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar.jsx";
 import Index from "./pages/Index.jsx";
 import NotFound from "./pages/NotFound.jsx";
-import "./App.css";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
