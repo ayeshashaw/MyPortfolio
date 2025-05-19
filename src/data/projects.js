@@ -54,18 +54,18 @@ const projects = [
 
   {
     id: 5,
-    title: "Todo-App",
-    description: "A simple and interactive To-Do List application built with React.js that allows users to add, edit, delete, and mark tasks as completed. It uses state management for dynamic updates and offers a clean, responsive UI for effective task tracking.",
-    technologies: ["React", "CSS","javaScript"],
-    githubUrl: "https://github.com/ayeshashaw/TODO-USING-REACT",
-    liveUrl: "",
+    title: "Todo-Manager",
+    Description: "A powerful and user-friendly **Todo Manager App** built using **React** and **Firebase Realtime Database**. It allows users to add, edit, delete, search, filter, and sort tasks, with light/dark theme support and a built-in calendar for due dates.",
+    technologies: ["React", "CSS", "JavaScript", "Firebase],
+    githubUrl: "https://github.com/ayeshashaw/TodoList-With-FireBase",
+    liveUrl: "https://taskifymaneger.netlify.app",
     featured: false,
     imageUrl: image2
   },
   {
     id: 6,
     title: "Quiz App",
-    description: "A dynamic and interactive quiz application built with React, utilizing the Open Trivia Database API. Users can create quizzes with customizable options, including category, difficulty, and the number of questions.",
+    Description: "A dynamic and interactive quiz application built with React, utilizing the Open Trivia Database API. Users can create quizzes with customizable options, including category, difficulty, and the number of questions.",
     technologies: ["React", "CSS", "Axios"],
     githubUrl: "https://github.com/ayeshashaw/Quiz-Game-using-react",
     liveUrl: "https://snazzy-halva-4613ac.netlify.app",
