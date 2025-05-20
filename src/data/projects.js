@@ -26,7 +26,7 @@ const projects = [
     description: "A full-stack investment portfolio tracking application built with the MERN stack (MongoDB, Express.js, React, Node.js). This application helps investors manage and track their investment portfolios across multiple asset classes including stocks, commodities, forex, bonds, ETFs, and cryptocurrencies.",
     technologies: ["MongoDB", "Express", "React", "Node.js"],
     githubUrl: "https://github.com/ayeshashaw/Investfolio-Investment-Portfolio-Tracker",
-    liveUrl: " https://investfolio.vercel.app",
+    liveUrl: "https://investfolio.vercel.app",
     featured: true,
     imageUrl: image6
   },
@@ -40,23 +40,21 @@ const projects = [
     featured: true,
     imageUrl: image4
   },
-
   {
     id: 4,
     title: "Calculator",
     description: "A basic yet functional Calculator application built with React.js, enabling users to perform arithmetic operations like addition, subtraction, multiplication, and division. It features a responsive UI, real-time updates using React state, and a clean, user-friendly design.",
-    technologies: ["React", "CSS","javaScript"],
+    technologies: ["React", "CSS", "JavaScript"],
     githubUrl: "https://github.com/ayeshashaw/Calculator-using-react",
     liveUrl: "",
     featured: false,
     imageUrl: image5
   },
-
   {
     id: 5,
     title: "Todo-Manager",
-    Description: "A powerful and user-friendly **Todo Manager App** built using **React** and **Firebase Realtime Database**. It allows users to add, edit, delete, search, filter, and sort tasks, with light/dark theme support and a built-in calendar for due dates.",
-    technologies: ["React", "CSS", "JavaScript", "Firebase],
+    description: "A powerful and user-friendly Todo Manager App built using React and Firebase Realtime Database. It allows users to add, edit, delete, search, filter, and sort tasks, with light/dark theme support and a built-in calendar for due dates.",
+    technologies: ["React", "CSS", "JavaScript", "Firebase"],
     githubUrl: "https://github.com/ayeshashaw/TodoList-With-FireBase",
     liveUrl: "https://taskifymaneger.netlify.app",
     featured: false,
@@ -65,7 +63,7 @@ const projects = [
   {
     id: 6,
     title: "Quiz App",
-    Description: "A dynamic and interactive quiz application built with React, utilizing the Open Trivia Database API. Users can create quizzes with customizable options, including category, difficulty, and the number of questions.",
+    description: "A dynamic and interactive quiz application built with React, utilizing the Open Trivia Database API. Users can create quizzes with customizable options, including category, difficulty, and the number of questions.",
     technologies: ["React", "CSS", "Axios"],
     githubUrl: "https://github.com/ayeshashaw/Quiz-Game-using-react",
     liveUrl: "https://snazzy-halva-4613ac.netlify.app",
@@ -73,5 +71,6 @@ const projects = [
     imageUrl: image1
   }
 ];
+
 
 export default projects;
