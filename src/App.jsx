@@ -10,15 +10,12 @@ const App = () => {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [prevScrollY, setPrevScrollY] = useState(0);
 
-  // Handle loading state
   useEffect(() => {
-    // Simulate loading for animations
     setTimeout(() => {
       setLoading(false);
     }, 1500);
   }, []);
 
-  // Handle scroll direction for navbar effects
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
