@@ -8,19 +8,9 @@
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
   margin-top: 4rem;
+  overflow: hidden;
 }
 
-.footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background: var(--gradient-accent);
-  border-radius: 2px;
-}
 
 .footer-socials {
   display: flex;

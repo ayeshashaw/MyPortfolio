@@ -6,19 +6,9 @@
   max-width: 800px;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
-.contact::before {
-  content: '';
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: var(--gradient-accent);
-  border-radius: 2px;
-}
 
 .contact.visible {
   opacity: 1;

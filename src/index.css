@@ -147,7 +147,7 @@ body {
   margin: 0;
   width: 100%;
   min-height: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg-primary);
@@ -162,6 +162,8 @@ body {
   background: var(--bg-primary);
   min-height: 100vh;
   transition: var(--transition);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 #root {
@@ -171,6 +173,8 @@ body {
   grid-template-columns: 100%;
   background: var(--bg-primary);
   transition: var(--transition);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 main {
@@ -179,6 +183,7 @@ main {
   max-width: 1400px;
   min-height: 100vh;
   padding: 0 2rem;
+  overflow-x: hidden;
 }
 
 section {
@@ -186,6 +191,7 @@ section {
   padding: 6rem 0;
   max-width: 1000px;
   position: relative;
+  overflow-x: hidden;
 }
 
 /* Typography */
