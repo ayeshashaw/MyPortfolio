@@ -113,7 +113,7 @@ const Projects = () => {
               <>
                 <div className="project-content">
                   <p className="project-overline fade-in">Featured Project</p>
-                  <h3 className="project-title fade-in delay-1">
+                  <h3 className="project-title fade-in delay-1" >
                     <a
                       href={project.liveUrl}
                       target="_blank"

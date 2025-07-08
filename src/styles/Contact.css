@@ -174,27 +174,10 @@
   background: transparent;
 }
 
-.email-link::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: var(--accent-primary);
-  transition: var(--transition);
-  z-index: -1;
-}
 
-.email-link:hover {
-  color: var(--bg-primary);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-}
 
-.email-link:hover::before {
-  left: 0;
-}
+
+
 
 /* Floating Animation for Contact Form */
 .contact-form {

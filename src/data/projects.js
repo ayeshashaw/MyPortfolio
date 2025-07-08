@@ -6,6 +6,19 @@ import image5 from "../assets/image5.png";
 import image6 from "../assets/image6.png";
 import image7 from "../assets/image7.png";
 import image8 from "../assets/image8.png";
+import image9 from "../assets/image9.png";
+import image10 from "../assets/image10.png";
+import image11 from "../assets/image11.png";
+import image12 from "../assets/image12.png";
+import image13 from "../assets/image13.png";
+import image14 from "../assets/image14.png";
+import image15 from "../assets/image15.png";
+import image16 from "../assets/image16.png";
+import image17 from "../assets/image17.png";
+import image18 from "../assets/image18.png";
+import image19 from "../assets/image19.png";
+
+
 
 const projects = [
   {
@@ -17,7 +30,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/CodeAuditAI-AI_Code_Reviewer",
     liveUrl: "https://code-audit-ai-ai-code-reviewer.vercel.app",
     featured: true,
-    images: [image7, image1, image2],
+    images: [image7, image10, image9],
   },
   {
     id: 2,
@@ -29,7 +42,7 @@ const projects = [
       "https://github.com/ayeshashaw/DocMeet_Doctor_Appointments_Booking_System",
     liveUrl: "https://docmeet-g0lg.onrender.com",
     featured: true,
-    images: [image3, image4, image5],
+    images: [image3, image13, image14],
   },
   {
     id: 3,
@@ -47,7 +60,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Birdie-Flappy-Bird-Game",
     liveUrl: "https://birdie-flappy-bird-game.vercel.app",
     featured: true,
-    images: [image8, image6, image7],
+    images: [image8, image11, image12],
   },
 
   {
@@ -60,7 +73,7 @@ const projects = [
       "https://github.com/ayeshashaw/Investfolio-Investment-Portfolio-Tracker",
     liveUrl: "https://investfolio.vercel.app",
     featured: true,
-    images: [image6, image1, image3],
+    images: [image6, image15, image16],
   },
 
   {
@@ -71,7 +84,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Sorting-Visualizer",
     liveUrl: "https://gentle-sable-3e156f.netlify.app/",
     featured: false,
-    images: [image4, image2, image8],
+    images: [image4],
   },
   {
     id: 6,
@@ -82,7 +95,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Calculator-using-react",
     liveUrl: "",
     featured: false,
-    images: [image5, image7, image1],
+    images: [image5],
   },
   {
     id: 7,
@@ -93,7 +106,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/TodoList-With-FireBase",
     liveUrl: "https://taskifymaneger.netlify.app",
     featured: false,
-    images: [image2, image3, image6],
+    images: [image2],
   },
   {
     id: 8,
@@ -104,8 +117,32 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Quiz-Game-using-react",
     liveUrl: "https://snazzy-halva-4613ac.netlify.app",
     featured: false,
-    images: [image1, image4, image5],
+    images: [image1],
   },
+
+  {
+    id: 9,
+    title: "Real-time Weather Application",
+    description:
+      "This real-time weather application is built using HTML, CSS, and JavaScript. It allows users to search for a city, view current weather conditions, access a city map, and see a 5-day weather forecast.",
+    technologies: ["HTML", "CSS", "JAVASCRIPT"],
+    githubUrl: "https://github.com/ayeshashaw/WeatherApp",
+    liveUrl: "https://dazzling-capybara-bd64d8.netlify.app",
+    featured: false,
+    images: [image17,image18],
+  },
+
+  {
+    id: 9,
+    title: "YouTube Clone",
+    description:
+      "A simplified web application that mimics YouTube, built using HTML, CSS, and JavaScript, now enhanced with real-time data from the YouTube Data API v3. This project demonstrates how to fetch, display, and interact with video content using web technologies.",
+    technologies: ["HTML", "CSS", "JAVASCRIPT"],
+    githubUrl: "https://github.com/ayeshashaw/YouTube-Clone",
+    liveUrl: "https://heartfelt-griffin-f654d9.netlify.app",
+    featured: false,
+    images: [image19],
+  }
 ];
 
 export default projects;

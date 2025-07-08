@@ -38,11 +38,9 @@ const Hero = () => {
       <div className="hero-content">
         <p className="hero-greeting fade-in">Hello, my name is</p>
         <h1 className="hero-title fade-in delay-1">Ayesha Shaw</h1>
-        <h2 className="hero-subtitle fade-in delay-2">I build things for the web.</h2>
+        <h2 className="hero-subtitle fade-in delay-2">Transforming ideas into code.</h2>
         <p className="hero-description fade-in delay-3">
-          I'm a MERN stack developer specializing in building exceptional digital experiences. 
-          Currently, I'm focused on building accessible, user-centered products 
-          with MongoDB, Express, React, and Node.js.
+          I craft seamless digital products using MongoDB, Express, React, and Node.js. I focus on performance, accessibility, and clean architecture to bring projects from idea to reality..
         </p>
         <div className="hero-buttons fade-in delay-4">
           <button className="button pulse" onClick={() => scrollToSection('contact')}>

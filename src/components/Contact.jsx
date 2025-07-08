@@ -78,7 +78,6 @@ const Contact = () => {
     } finally {
       setIsSubmitting(false);
       
-      // Reset the form status after 5 seconds
       setTimeout(() => {
         setFormStatus({
           success: false,

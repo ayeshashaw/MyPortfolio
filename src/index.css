@@ -234,7 +234,6 @@ p:last-of-type {
 a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
   position: relative;
   transition: var(--transition);
   cursor: pointer;
