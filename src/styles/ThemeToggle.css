@@ -54,12 +54,12 @@
 
 /* Theme-specific styles */
 [data-theme="dark"] {
-  --toggle-bg: linear-gradient(135deg, #1a1a2e, #16213e);
-  --toggle-border: #64ffda;
+  --toggle-bg: linear-gradient(135deg, #0f0f23, #1a1a2e);
+  --toggle-border: #00d4aa;
   --toggle-shadow: rgba(0, 0, 0, 0.3);
-  --toggle-thumb: linear-gradient(135deg, #64ffda, #4ecdc4);
-  --toggle-thumb-shadow: rgba(100, 255, 218, 0.3);
-  --toggle-icon: #0a192f;
+  --toggle-thumb: linear-gradient(135deg, #00d4aa, #4ecdc4);
+  --toggle-thumb-shadow: rgba(0, 212, 170, 0.3);
+  --toggle-icon: #1a1a2e;
   --toggle-translate: 0;
 }
 
