@@ -54,12 +54,12 @@
 
 /* Theme-specific styles */
 [data-theme="dark"] {
-  --toggle-bg: linear-gradient(135deg, #0f0f23, #1a1a2e);
+  --toggle-bg: linear-gradient(135deg, #14141c, #1e1e28);
   --toggle-border: #00d4aa;
   --toggle-shadow: rgba(0, 0, 0, 0.3);
   --toggle-thumb: linear-gradient(135deg, #00d4aa, #4ecdc4);
   --toggle-thumb-shadow: rgba(0, 212, 170, 0.3);
-  --toggle-icon: #1a1a2e;
+  --toggle-icon: #14141c;
   --toggle-translate: 0;
 }
 
