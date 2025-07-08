@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import ThemeToggle from './ThemeToggle.jsx';
 import '../styles/Navbar.css'
 import resumePDF from '../assets/AyeshaShaw.pdf';
 
@@ -62,6 +63,9 @@ const Navbar = () => {
               <a href={resumePDF} download="AyeshaShaw.pdf" target="_blank" rel="noopener noreferrer" className="button">
                 Resume
               </a>
+            </li>
+            <li className="nav-item">
+              <ThemeToggle />
             </li>
           </ul>
         </nav>
