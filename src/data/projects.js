@@ -17,7 +17,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/CodeAuditAI-AI_Code_Reviewer",
     liveUrl: "https://code-audit-ai-ai-code-reviewer.vercel.app",
     featured: true,
-    imageUrl: image7,
+    images: [image7, image1, image2],
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const projects = [
       "https://github.com/ayeshashaw/DocMeet_Doctor_Appointments_Booking_System",
     liveUrl: "https://docmeet-g0lg.onrender.com",
     featured: true,
-    imageUrl: image3,
+    images: [image3, image4, image5],
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Birdie-Flappy-Bird-Game",
     liveUrl: "https://birdie-flappy-bird-game.vercel.app",
     featured: true,
-    imageUrl: image8,
+    images: [image8, image6, image7],
   },
 
   {
@@ -60,7 +60,7 @@ const projects = [
       "https://github.com/ayeshashaw/Investfolio-Investment-Portfolio-Tracker",
     liveUrl: "https://investfolio.vercel.app",
     featured: true,
-    imageUrl: image6,
+    images: [image6, image1, image3],
   },
 
   {
@@ -71,7 +71,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Sorting-Visualizer",
     liveUrl: "https://gentle-sable-3e156f.netlify.app/",
     featured: false,
-    imageUrl: image4,
+    images: [image4, image2, image8],
   },
   {
     id: 6,
@@ -82,7 +82,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Calculator-using-react",
     liveUrl: "",
     featured: false,
-    imageUrl: image5,
+    images: [image5, image7, image1],
   },
   {
     id: 7,
@@ -93,7 +93,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/TodoList-With-FireBase",
     liveUrl: "https://taskifymaneger.netlify.app",
     featured: false,
-    imageUrl: image2,
+    images: [image2, image3, image6],
   },
   {
     id: 8,
@@ -104,7 +104,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Quiz-Game-using-react",
     liveUrl: "https://snazzy-halva-4613ac.netlify.app",
     featured: false,
-    imageUrl: image1,
+    images: [image1, image4, image5],
   },
 ];
 

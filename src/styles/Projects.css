@@ -225,19 +225,6 @@
   opacity: 0.1;
 }
 
-.project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--border-radius-lg);
-  transition: var(--transition);
-  position: relative;
-  z-index: 0;
-}
-
-.project-image:hover img {
-  transform: scale(1.05);
-}
-
 /* Other Projects Section */
 .other-projects-heading {
   font-size: 2rem;

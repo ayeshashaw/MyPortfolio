@@ -158,11 +158,19 @@ body {
   transition: var(--transition);
 }
 
+.app-container {
+  background: var(--bg-primary);
+  min-height: 100vh;
+  transition: var(--transition);
+}
+
 #root {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 100%;
+  background: var(--bg-primary);
+  transition: var(--transition);
 }
 
 main {

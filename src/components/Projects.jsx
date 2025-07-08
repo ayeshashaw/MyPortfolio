@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import projects from "../data/projects";
+import ProjectCarousel from "./ProjectCarousel";
 import '../styles/Projects.css'
 
 
@@ -64,13 +65,10 @@ const Projects = () => {
             {index % 2 === 0 ? (
               <>
                 <div className="project-image fade-in delay-1">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={project.imageUrl} alt={project.title} />
-                  </a>
+                  <ProjectCarousel 
+                    images={project.images} 
+                    title={project.title}
+                  />
                 </div>
                 <div className="project-content">
                   <p className="project-overline fade-in">Featured Project</p>
@@ -152,13 +150,10 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="project-image fade-in delay-1">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={project.imageUrl} alt={project.title} />
-                  </a>
+                  <ProjectCarousel 
+                    images={project.images} 
+                    title={project.title}
+                  />
                 </div>
               </>
             )}
