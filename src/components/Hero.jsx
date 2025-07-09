@@ -211,7 +211,6 @@ const Hero = () => {
           </svg>
         </div>
       </div>
-    }
     </section>
   );
 };
