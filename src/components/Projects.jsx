@@ -170,9 +170,8 @@ const Projects = () => {
             <div className="decoration-line"></div>
           </div>
           <h3 className="more-projects-title">More Creative Works</h3>
-          <p className="more-projects-subtitle">
-            Exploring different technologies and solving unique challenges
-          </p>
+          
+          
         </div>
 
         <div className="projects-showcase">
