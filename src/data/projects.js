@@ -133,7 +133,7 @@ const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "YouTube Clone",
     description:
       "A simplified web application that mimics YouTube, built using HTML, CSS, and JavaScript, now enhanced with real-time data from the YouTube Data API v3. This project demonstrates how to fetch, display, and interact with video content using web technologies.",
