@@ -161,154 +161,49 @@ const Projects = () => {
         ))}
       </div>
 
-      <h3 className="other-projects-heading fade-in">
-        Other Noteworthy Projects
-      </h3>
-
-      <div className="other-projects-grid">
-        {otherProjects.map((project, index) => (
-          <div
-            key={project.id}
-            className="other-project"
-            ref={(el) => (otherProjectsRef.current[index] = el)}
-          >
-            <div className="other-project-inner fade-in">
-              <div className="project-top">
-                <div className="folder-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div className="project-links">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-
-              <h3 className="other-project-title">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.title}
-                </a>
-              </h3>
-
-              <div className="other-project-description">
-                <p>{project.description}</p>
-              </div>
-
-              <ul className="other-project-tech-list">
-                {project.technologies.slice(0, 4).map((tech, i) => (
-                  <li key={i}>{tech}</li>
-                ))}
-              </ul>
-            </div>
+      {/* More Projects Section */}
+      <div className="more-projects-section">
+        <div className="section-header fade-in">
+          <div className="header-decoration">
+            <div className="decoration-line"></div>
+            <div className="decoration-dot"></div>
+            <div className="decoration-line"></div>
           </div>
-        ))}
-      </div>
+          <h3 className="more-projects-title">More Creative Works</h3>
+          <p className="more-projects-subtitle">
+            Exploring different technologies and solving unique challenges
+          </p>
+        </div>
 
-      <div className="other-projects-section">
-        <h3 className="other-projects-heading fade-in">
-          Other Noteworthy Projects
-        </h3>
-        <p className="other-projects-subtitle fade-in delay-1">
-          A collection of smaller projects and experiments that showcase different aspects of my development skills
-        </p>
-
-        <div className="other-projects-grid">
+        <div className="projects-showcase">
           {otherProjects.map((project, index) => (
             <div
               key={project.id}
-              className="other-project"
+              className={`project-card fade-in ${index % 2 === 0 ? 'card-left' : 'card-right'}`}
               ref={(el) => (otherProjectsRef.current[index] = el)}
+              style={{ animationDelay: `${0.1 + index * 0.1}s` }}
             >
-              <div className="other-project-inner fade-in">
-                <div className="project-header">
-                  <div className="project-top">
-                    <div className="project-icon-wrapper">
-                      <div className="folder-icon">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          role="img"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                      </div>
+              <div className="card-inner">
+                <div className="card-background">
+                  <div className="bg-pattern"></div>
+                  <div className="bg-gradient"></div>
+                </div>
+                
+                <div className="card-content">
+                  <div className="card-header">
+                    <div className="project-number">
+                      <span>{String(index + 1).padStart(2, '0')}</span>
                     </div>
-                    <div className="project-links">
+                    <div className="project-actions">
                       <a
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="project-link"
-                        title="View Source Code"
+                        className="action-btn github-btn"
+                        title="View Code"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          role="img"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/>
                         </svg>
                       </a>
                       {project.liveUrl && (
@@ -316,55 +211,59 @@ const Projects = () => {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="project-link"
-                          title="View Live Demo"
+                          className="action-btn demo-btn"
+                          title="Live Demo"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            role="img"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15,3 21,3 21,9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
                           </svg>
                         </a>
                       )}
                     </div>
                   </div>
-                </div>
 
-                <div className="project-content">
-                  <h3 className="other-project-title">
-                    <a
-                      href={project.liveUrl || project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {project.title}
-                    </a>
-                  </h3>
-
-                  <div className="other-project-description">
-                    <p>{project.description}</p>
+                  <div className="card-body">
+                    <h4 className="project-title">
+                      <a
+                        href={project.liveUrl || project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.title}
+                      </a>
+                    </h4>
+                    
+                    <p className="project-description">
+                      {project.description}
+                    </p>
                   </div>
 
-                  <div className="project-footer">
-                    <ul className="other-project-tech-list">
-                      {project.technologies.slice(0, 5).map((tech, i) => (
-                        <li key={i}>{tech}</li>
+                  <div className="card-footer">
+                    <div className="tech-stack">
+                      {project.technologies.slice(0, 4).map((tech, i) => (
+                        <span key={i} className="tech-tag">
+                          {tech}
+                        </span>
                       ))}
-                    </ul>
+                      {project.technologies.length > 4 && (
+                        <span className="tech-more">
+                          +{project.technologies.length - 4}
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="section-footer fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="footer-text">
+            <p>Want to see more? Check out my <a href="https://github.com/ayeshashaw" target="_blank" rel="noopener noreferrer">GitHub</a> for additional projects and contributions.</p>
+          </div>
         </div>
       </div>
 
