@@ -259,11 +259,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="section-footer fade-in" style={{ animationDelay: '0.8s' }}>
-          <div className="footer-text">
-            <p>Want to see more? Check out my <a href="https://github.com/ayeshashaw" target="_blank" rel="noopener noreferrer">GitHub</a> for additional projects and contributions.</p>
-          </div>
-        </div>
+        
       </div>
 
 
