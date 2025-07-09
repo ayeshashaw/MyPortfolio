@@ -59,7 +59,6 @@ const Hero = () => {
           
           <h1 className="hero-title fade-in delay-1">
             <span className="title-main">Ayesha Shaw</span>
-            <span className="title-cursor">|</span>
           </h1>
           
           <h2 className="hero-subtitle fade-in delay-2">
@@ -202,14 +201,6 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="scroll-indicator fade-in delay-7">
-        <div className="scroll-text">Scroll to explore</div>
-        <div className="scroll-arrow">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M7 13l3 3 7-7M7 6l3 3 7-7"/>
-          </svg>
-        </div>
-      </div>
     </section>
   );
 };

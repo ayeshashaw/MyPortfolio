@@ -54,9 +54,9 @@ const About = () => {
       icon: '⚙️',
       skills: [
         { name: 'Node.js', level: 85, color: '#339933' },
-        { name: 'Express.js', level: 80, color: '#000000' },
+        { name: 'Express.js', level: 80, color: '#4479A1' },
         { name: 'RESTful APIs', level: 85, color: '#FF6B35' },
-        { name: 'JWT Authentication', level: 75, color: '#000000' }
+        { name: 'JWT Authentication', level: 75, color: '#ED8B00' }
       ]
     },
     {
@@ -100,9 +100,7 @@ const About = () => {
 
       <section id="skills" className="skills" ref={skillsRef}>
         <h2 className="section-heading">My Skills</h2>
-        <p className="skills-intro fade-in">
-          Here are some technologies I've been working with recently:
-        </p>
+        
         <div className="skills-categories">
           {skillCategories.map((category, categoryIndex) => (
             <div 
@@ -143,22 +141,7 @@ const About = () => {
           ))}
         </div>
         
-        <div className="skills-summary fade-in" style={{ animationDelay: '0.8s' }}>
-          <div className="summary-stats">
-            <div className="stat-item">
-              <span className="stat-number">15+</span>
-              <span className="stat-label">Projects Completed</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">12+</span>
-              <span className="stat-label">Technologies Mastered</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Passion Driven</span>
-            </div>
-          </div>
-        </div>
+        
       </section>
 
 
