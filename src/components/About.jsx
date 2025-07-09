@@ -64,6 +64,8 @@ const About = () => {
       icon: '🛠️',
       skills: [
         { name: 'MongoDB', level: 80, color: '#47A248' },
+        { name: 'MySQL', level: 75, color: '#4479A1' },
+        { name: 'Redis', level: 70, color: '#DC382D' },
         { name: 'Git & GitHub', level: 90, color: '#F05032' },
         { name: 'Java', level: 70, color: '#ED8B00' }
       ]
@@ -144,16 +146,16 @@ const About = () => {
         <div className="skills-summary fade-in" style={{ animationDelay: '0.8s' }}>
           <div className="summary-stats">
             <div className="stat-item">
-              <span className="stat-number">3+</span>
-              <span className="stat-label">Years Experience</span>
-            </div>
-            <div className="stat-item">
               <span className="stat-number">15+</span>
               <span className="stat-label">Projects Completed</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">10+</span>
+              <span className="stat-number">12+</span>
               <span className="stat-label">Technologies Mastered</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">100%</span>
+              <span className="stat-label">Passion Driven</span>
             </div>
           </div>
         </div>
