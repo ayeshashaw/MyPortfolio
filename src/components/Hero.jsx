@@ -158,6 +158,7 @@ const Hero = () => {
                 <span className="code-text">
                   <span className="property">  skills</span>
                   <span className="punctuation">: [</span>
+                  ]
                   <span className="string">'React'</span>
                   <span className="punctuation">, </span>
                   <span className="string">'Node.js'</span>
@@ -210,6 +211,7 @@ const Hero = () => {
           </svg>
         </div>
       </div>
+    }
     </section>
   );
 };
