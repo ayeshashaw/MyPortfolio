@@ -119,102 +119,192 @@
   font-size: var(--fz-lg);
   color: var(--text-secondary);
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
 }
 
-.skills-grid {
+.skills-categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
 }
 
-.skill-item {
-  position: relative;
-  transition: var(--transition);
-}
-
-.skill-content {
+.skill-category {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
 }
 
-.skill-content::before {
+.skill-category::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 4px;
-  height: 100%;
+  right: 0;
+  height: 4px;
   background: var(--gradient-accent);
-  transform: scaleY(0);
-  transform-origin: bottom;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: var(--transition);
 }
 
-.skill-content:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+.skill-category:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
   border-color: var(--accent-primary);
 }
 
-.skill-content:hover::before {
-  transform: scaleY(1);
+.skill-category:hover::before {
+  transform: scaleX(1);
 }
 
-.skill-arrow {
-  color: var(--accent-primary);
+.category-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.category-icon {
+  font-size: 2rem;
   margin-right: 1rem;
-  font-size: var(--fz-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--accent-tint);
+  border-radius: 50%;
+  border: 2px solid var(--accent-primary);
+}
+
+.category-title {
+  font-size: 1.5rem;
   font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-item {
+  transition: var(--transition);
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .skill-name {
   color: var(--text-primary);
   font-weight: 600;
   font-size: var(--fz-md);
-  flex: 1;
 }
 
-.skill-category {
-  font-size: var(--fz-xs);
+.skill-percentage {
+  font-family: var(--font-mono);
+  font-size: var(--fz-sm);
   color: var(--accent-primary);
-  background: var(--accent-tint);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
   font-weight: 500;
-  border: 1px solid var(--accent-primary);
 }
 
-/* Skill Categories with Different Colors */
-.skill-item:nth-child(4n+1) .skill-category {
-  background: rgba(100, 255, 218, 0.1);
-  color: #64ffda;
-  border-color: #64ffda;
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
 }
 
-.skill-item:nth-child(4n+2) .skill-category {
-  background: rgba(87, 203, 255, 0.1);
-  color: #57cbff;
-  border-color: #57cbff;
+.skill-progress {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
-.skill-item:nth-child(4n+3) .skill-category {
-  background: rgba(245, 125, 255, 0.1);
-  color: #f57dff;
-  border-color: #f57dff;
+.skill-progress::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite;
 }
 
-.skill-item:nth-child(4n+4) .skill-category {
-  background: rgba(255, 107, 107, 0.1);
-  color: #ff6b6b;
-  border-color: #ff6b6b;
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.skills-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.skills-summary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: var(--fz-sm);
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Responsive Design */
@@ -235,8 +325,8 @@
     margin: 0.05rem 0.3rem 0 0;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .skills-categories {
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -249,23 +339,46 @@
     top: 15px;
     left: 15px;
   }
+
+  .summary-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
   .image-placeholder {
     width: 200px;
     height: 200px;
   }
 
-  .skill-content {
+  .skill-category {
     padding: 1rem;
   }
 
   .about-text p:first-child::first-letter {
+    font-size: 2rem;
+  }
+
+  .category-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+
+  .skills-summary {
+    padding: 2rem 1rem;
+  }
+
+  .stat-number {
     font-size: 2rem;
   }
 }

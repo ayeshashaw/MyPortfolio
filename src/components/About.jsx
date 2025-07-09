@@ -37,20 +37,38 @@ const About = () => {
     };
   }, []);
 
-  const skills = [
-    { name: 'MongoDB', category: 'Database' },
-    { name: 'Express.js', category: 'Backend' },
-    { name: 'React.js', category: 'Frontend' },
-    { name: 'Node.js', category: 'Backend' },
-    { name: 'JavaScript (ES6+)', category: 'Language' },
-    { name: 'Java', category: 'Language' },
-    { name: 'HTML & CSS', category: 'Frontend' },
-    { name: 'RESTful APIs', category: 'Backend' },
-    { name: 'Redux', category: 'Frontend' },
-    { name: 'Git & GitHub', category: 'Tools' },
-    { name: 'Responsive Design', category: 'Frontend' },
-    { name: 'JWT Authentication', category: 'Security' }
-    ];
+  const skillCategories = [
+    {
+      title: 'Frontend Development',
+      icon: '🎨',
+      skills: [
+        { name: 'React.js', level: 90, color: '#61DAFB' },
+        { name: 'JavaScript (ES6+)', level: 85, color: '#F7DF1E' },
+        { name: 'HTML & CSS', level: 95, color: '#E34F26' },
+        { name: 'Redux', level: 80, color: '#764ABC' },
+        { name: 'Responsive Design', level: 90, color: '#06B6D4' }
+      ]
+    },
+    {
+      title: 'Backend Development',
+      icon: '⚙️',
+      skills: [
+        { name: 'Node.js', level: 85, color: '#339933' },
+        { name: 'Express.js', level: 80, color: '#000000' },
+        { name: 'RESTful APIs', level: 85, color: '#FF6B35' },
+        { name: 'JWT Authentication', level: 75, color: '#000000' }
+      ]
+    },
+    {
+      title: 'Database & Tools',
+      icon: '🛠️',
+      skills: [
+        { name: 'MongoDB', level: 80, color: '#47A248' },
+        { name: 'Git & GitHub', level: 90, color: '#F05032' },
+        { name: 'Java', level: 70, color: '#ED8B00' }
+      ]
+    }
+  ];
 
   return (
     <>
@@ -83,20 +101,61 @@ const About = () => {
         <p className="skills-intro fade-in">
           Here are some technologies I've been working with recently:
         </p>
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
+        <div className="skills-categories">
+          {skillCategories.map((category, categoryIndex) => (
             <div 
-              key={index} 
-              className="skill-item fade-in" 
-              style={{ animationDelay: `${0.1 + index * 0.05}s` }}
+              key={categoryIndex} 
+              className="skill-category fade-in"
+              style={{ animationDelay: `${0.2 + categoryIndex * 0.1}s` }}
             >
-              <div className="skill-content">
-                <span className="skill-arrow">&#9656;</span>
-                <span className="skill-name">{skill.name}</span>
-                <span className="skill-category">{skill.category}</span>
+              <div className="category-header">
+                <span className="category-icon">{category.icon}</span>
+                <h3 className="category-title">{category.title}</h3>
+              </div>
+              
+              <div className="skills-list">
+                {category.skills.map((skill, skillIndex) => (
+                  <div 
+                    key={skillIndex} 
+                    className="skill-item"
+                    style={{ animationDelay: `${0.3 + categoryIndex * 0.1 + skillIndex * 0.05}s` }}
+                  >
+                    <div className="skill-info">
+                      <span className="skill-name">{skill.name}</span>
+                      <span className="skill-percentage">{skill.level}%</span>
+                    </div>
+                    <div className="skill-bar">
+                      <div 
+                        className="skill-progress"
+                        style={{ 
+                          width: `${skill.level}%`,
+                          backgroundColor: skill.color,
+                          boxShadow: `0 0 10px ${skill.color}40`
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="skills-summary fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="summary-stats">
+            <div className="stat-item">
+              <span className="stat-number">3+</span>
+              <span className="stat-label">Years Experience</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">15+</span>
+              <span className="stat-label">Projects Completed</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">10+</span>
+              <span className="stat-label">Technologies Mastered</span>
+            </div>
+          </div>
         </div>
       </section>
 
