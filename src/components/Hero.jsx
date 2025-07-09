@@ -141,7 +141,7 @@ const Hero = () => {
                   <span className="keyword">const</span> 
                   <span className="variable"> developer</span> 
                   <span className="operator"> = </span>
-                  <span className="punctuation">{</span>
+                  <span className="punctuation">{"{"}</span>
                 </span>
               </div>
               <div className="code-line">
@@ -175,7 +175,7 @@ const Hero = () => {
               <div className="code-line">
                 <span className="line-number">5</span>
                 <span className="code-text">
-                  <span className="punctuation">};</span>
+                  <span className="punctuation">{"}";};</span>
                 </span>
               </div>
             </div>
