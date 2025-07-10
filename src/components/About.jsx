@@ -39,7 +39,7 @@ const About = () => {
 
   const skills = [
     { name: 'React.js', icon: '⚛️', color: '#61DAFB' },
-    { name: 'JavaScript', icon: '🟨', color: '#F7DF1E' },
+    { name: 'JavaScript', icon: 'JS', color: '#F7DF1E' },
     { name: 'Node.js', icon: '🟢', color: '#339933' },
     { name: 'Express.js', icon: '⚡', color: '#000000' },
     { name: 'MongoDB', icon: '🍃', color: '#47A248' },
