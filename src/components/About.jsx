@@ -51,7 +51,7 @@ const About = () => {
     { name: 'Java', icon: '☕', color: '#ED8B00' },
     { name: 'Firebase', icon: '🔥', color: '#FFCA28' },
     { name: 'JWT Authentication', icon: '🔐', color: '#000000' },
-    { name: 'Redis', icon: '🔴', color: '#DC382D' },
+    { name: 'Redis', icon: 'R', color: '#DC382D' },
     { name: 'Axios', icon: '📡', color: '#5A29E4' }
   ];
 
