@@ -39,10 +39,57 @@ const App = () => {
 
   if (loading) {
     return (
-      <div className="loader">
+      <div className="modern-loader">
+        <div className="loader-background">
+          <div className="floating-shapes">
+            <div className="shape shape-1"></div>
+            <div className="shape shape-2"></div>
+            <div className="shape shape-3"></div>
+            <div className="shape shape-4"></div>
+          </div>
+          <div className="gradient-orbs">
+            <div className="orb orb-1"></div>
+            <div className="orb orb-2"></div>
+          </div>
+        </div>
+        
         <div className="loader-content">
-          <div className="loader-circle"></div>
-          <div className="loader-text">Loading...</div>
+          <div className="logo-container">
+            <div className="logo-text">
+              <span className="letter">A</span>
+              <span className="letter">y</span>
+              <span className="letter">e</span>
+              <span className="letter">s</span>
+              <span className="letter">h</span>
+              <span className="letter">a</span>
+            </div>
+            <div className="logo-subtitle">Portfolio</div>
+          </div>
+          
+          <div className="loading-animation">
+            <div className="loading-bars">
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
+            <div className="loading-text">
+              <span className="loading-word">Loading</span>
+              <span className="dots">
+                <span className="dot">.</span>
+                <span className="dot">.</span>
+                <span className="dot">.</span>
+              </span>
+            </div>
+          </div>
+          
+          <div className="loading-progress">
+            <div className="progress-bar">
+              <div className="progress-fill"></div>
+            </div>
+            <div className="progress-text">Preparing your experience</div>
+          </div>
         </div>
       </div>
     );
