@@ -54,18 +54,6 @@ const App = () => {
         </div>
         
         <div className="loader-content">
-          <div className="logo-container">
-            <div className="logo-text">
-              <span className="letter">A</span>
-              <span className="letter">y</span>
-              <span className="letter">e</span>
-              <span className="letter">s</span>
-              <span className="letter">h</span>
-              <span className="letter">a</span>
-            </div>
-            <div className="logo-subtitle">Portfolio</div>
-          </div>
-          
           <div className="loading-animation">
             <div className="loading-bars">
               <div className="bar"></div>
