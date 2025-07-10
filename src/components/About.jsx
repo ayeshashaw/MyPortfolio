@@ -37,39 +37,23 @@ const About = () => {
     };
   }, []);
 
-  const skillCategories = [
-    {
-      title: 'Frontend Development',
-      icon: '🎨',
-      skills: [
-        { name: 'React.js', level: 90, color: '#61DAFB' },
-        { name: 'JavaScript (ES6+)', level: 85, color: '#F7DF1E' },
-        { name: 'HTML & CSS', level: 95, color: '#E34F26' },
-        { name: 'Redux', level: 80, color: '#764ABC' },
-        { name: 'Responsive Design', level: 90, color: '#06B6D4' }
-      ]
-    },
-    {
-      title: 'Backend Development',
-      icon: '⚙️',
-      skills: [
-        { name: 'Node.js', level: 85, color: '#339933' },
-        { name: 'Express.js', level: 80, color: '#4479A1' },
-        { name: 'RESTful APIs', level: 85, color: '#FF6B35' },
-        { name: 'JWT Authentication', level: 75, color: '#ED8B00' }
-      ]
-    },
-    {
-      title: 'Database & Tools',
-      icon: '🛠️',
-      skills: [
-        { name: 'MongoDB', level: 80, color: '#47A248' },
-        { name: 'MySQL', level: 75, color: '#4479A1' },
-        { name: 'Redis', level: 70, color: '#DC382D' },
-        { name: 'Git & GitHub', level: 90, color: '#F05032' },
-        { name: 'Java', level: 70, color: '#ED8B00' }
-      ]
-    }
+  const skills = [
+    { name: 'React.js', icon: '⚛️', color: '#61DAFB' },
+    { name: 'JavaScript', icon: '🟨', color: '#F7DF1E' },
+    { name: 'Node.js', icon: '🟢', color: '#339933' },
+    { name: 'Express.js', icon: '⚡', color: '#000000' },
+    { name: 'MongoDB', icon: '🍃', color: '#47A248' },
+    { name: 'MySQL', icon: '🐬', color: '#4479A1' },
+    { name: 'HTML & CSS', icon: '🎨', color: '#E34F26' },
+    { name: 'Redux', icon: '🔄', color: '#764ABC' },
+    { name: 'RESTful APIs', icon: '🔗', color: '#FF6B35' },
+    { name: 'Git & GitHub', icon: '📚', color: '#F05032' },
+    { name: 'Java', icon: '☕', color: '#ED8B00' },
+    { name: 'Firebase', icon: '🔥', color: '#FFCA28' },
+    { name: 'JWT Authentication', icon: '🔐', color: '#000000' },
+    { name: 'Responsive Design', icon: '📱', color: '#06B6D4' },
+    { name: 'Redis', icon: '🔴', color: '#DC382D' },
+    { name: 'Axios', icon: '📡', color: '#5A29E4' }
   ];
 
   return (
@@ -101,47 +85,22 @@ const About = () => {
       <section id="skills" className="skills" ref={skillsRef}>
         <h2 className="section-heading">My Skills</h2>
         
-        <div className="skills-categories">
-          {skillCategories.map((category, categoryIndex) => (
+        <div className="skills-grid">
+          {skills.map((skill, index) => (
             <div 
-              key={categoryIndex} 
-              className="skill-category fade-in"
-              style={{ animationDelay: `${0.2 + categoryIndex * 0.1}s` }}
+              key={index} 
+              className="skill-card fade-in"
+              style={{ 
+                animationDelay: `${0.1 + index * 0.05}s`,
+                '--skill-color': skill.color 
+              }}
             >
-              <div className="category-header">
-                <span className="category-icon">{category.icon}</span>
-                <h3 className="category-title">{category.title}</h3>
-              </div>
-              
-              <div className="skills-list">
-                {category.skills.map((skill, skillIndex) => (
-                  <div 
-                    key={skillIndex} 
-                    className="skill-item"
-                    style={{ animationDelay: `${0.3 + categoryIndex * 0.1 + skillIndex * 0.05}s` }}
-                  >
-                    <div className="skill-info">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-percentage">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div 
-                        className="skill-progress"
-                        style={{ 
-                          width: `${skill.level}%`,
-                          backgroundColor: skill.color,
-                          boxShadow: `0 0 10px ${skill.color}40`
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <div className="skill-icon">{skill.icon}</div>
+              <div className="skill-name">{skill.name}</div>
+              <div className="skill-glow"></div>
             </div>
           ))}
         </div>
-        
-        
       </section>
 
 
