@@ -592,9 +592,8 @@
     text-align: center;
   }
 
-  .hero-visual {
-    order: -1;
-  }
+  /* REMOVED: .hero-visual { order: -1; } */
+  /* Now the text content (hero-text) will naturally come first */
 
   .hero-stats {
     justify-content: center;
