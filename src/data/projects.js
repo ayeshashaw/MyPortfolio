@@ -17,6 +17,9 @@ import image16 from "../assets/image16.png";
 import image17 from "../assets/image17.png";
 import image18 from "../assets/image18.png";
 import image19 from "../assets/image19.png";
+import image20 from "../assets/image20.png";
+import image21 from "../assets/image21.png";
+import image22 from "../assets/image22.png";
 
 
 
@@ -30,7 +33,7 @@ const projects = [
     githubUrl: "https://github.com/ayeshashaw/Bloom-to-Basket-Order-Management-System-",
     liveUrl: "https://bloom-to-basket.vercel.app",
     featured: true,
-    images: [image1], // You can update this with actual project images later
+    images: [image20,image21,image22], 
   },
   {
     id: 2,
