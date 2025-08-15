@@ -23,6 +23,17 @@ import image19 from "../assets/image19.png";
 const projects = [
   {
     id: 1,
+    title: "Bloom to Basket - Food Ordering System",
+    description:
+      "A comprehensive full-stack food ordering application built with the MERN stack. Features include user authentication, dynamic food management, real-time order processing, and secure payment integration. The application provides an intuitive interface for customers to browse menus, place orders, and track deliveries, while offering restaurant owners powerful tools for menu and order management.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "bcryptjs", "Multer", "CORS"],
+    githubUrl: "https://github.com/ayeshashaw/Bloom-to-Basket-Order-Management-System-",
+    liveUrl: "https://bloom-to-basket.vercel.app",
+    featured: true,
+    images: [image1], // You can update this with actual project images later
+  },
+  {
+    id: 2,
     title: "CodeAuditAI-Code Reviewer",
     description:
       "This project is an AI-powered code review tool. It leverages Gemini AI 2.0 Flash to analyze code snippets, providing insightful feedback and suggestions. It features a user-friendly frontend with Monaco Editor for code input and a Node.js backend for AI integration.",
@@ -33,7 +44,7 @@ const projects = [
     images: [image7, image10, image9],
   },
   {
-    id: 2,
+    id: 3,
     title: "DocMeet - Doctor Appointment Booking System",
     description:
       "DocMeet is a comprehensive doctor appointment booking system designed to facilitate seamless interactions between patients, doctors, and administrators. The system is built using a modern tech stack and follows a microservices architecture pattern.",
@@ -45,7 +56,7 @@ const projects = [
     images: [image3, image13, image14],
   },
   {
-    id: 3,
+    id: 4,
     title: "Flappy Bird Game ",
     description:
       "This is a web-based Flappy Bird game that features user authentication, real-time score tracking, and a leaderboard. It provides an engaging and competitive gameplay experience, built with a full-stack architecture using React, Node.js, and MongoDB.",
@@ -64,7 +75,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "InvestFolio – Investment portfolio Tracker",
     description:
       "A full-stack investment portfolio tracking application built with the MERN stack (MongoDB, Express.js, React, Node.js). This application helps investors manage and track their investment portfolios across multiple asset classes including stocks, commodities, forex, bonds, ETFs, and cryptocurrencies.",
@@ -77,7 +88,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Sorting-Visualizer",
     description:"Sorting Visualizer is an interactive tool that visually demonstrates how popular sorting algorithms work. It simplifies complex concepts, making it ideal for students and coding enthusiasts to learn and understand sorting techniques effectively.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -87,7 +98,7 @@ const projects = [
     images: [image4],
   },
   {
-    id: 6,
+    id: 7,
     title: "Calculator",
     description:
       "A basic yet functional Calculator application built with React.js, enabling users to perform arithmetic operations like addition, subtraction, multiplication, and division. It features a responsive UI, real-time updates using React state, and a clean, user-friendly design.",
@@ -98,7 +109,7 @@ const projects = [
     images: [image5],
   },
   {
-    id: 7,
+    id: 8,
     title: "Todo-Manager",
     description:
       "A powerful and user-friendly Todo Manager App built using React and Firebase Realtime Database. It allows users to add, edit, delete, search, filter, and sort tasks, with light/dark theme support and a built-in calendar for due dates.",
@@ -109,7 +120,7 @@ const projects = [
     images: [image2],
   },
   {
-    id: 8,
+    id: 9,
     title: "Quiz App",
     description:
       "A dynamic and interactive quiz application built with React, utilizing the Open Trivia Database API. Users can create quizzes with customizable options, including category, difficulty, and the number of questions.",
@@ -121,7 +132,7 @@ const projects = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Real-time Weather Application",
     description:
       "This real-time weather application is built using HTML, CSS, and JavaScript. It allows users to search for a city, view current weather conditions, access a city map, and see a 5-day weather forecast.",
@@ -133,7 +144,7 @@ const projects = [
   },
 
   {
-    id: 10,
+    id: 11,
     title: "YouTube Clone",
     description:
       "A simplified web application that mimics YouTube, built using HTML, CSS, and JavaScript, now enhanced with real-time data from the YouTube Data API v3. This project demonstrates how to fetch, display, and interact with video content using web technologies.",
