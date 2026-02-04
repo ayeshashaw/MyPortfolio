@@ -51,6 +51,9 @@ const Navbar = () => {
               <button onClick={() => scrollToSection('about')}>About</button>
             </li>
             <li className="nav-item">
+              <button onClick={() => scrollToSection('experience')}>Experience</button>
+            </li>
+            <li className="nav-item">
               <button onClick={() => scrollToSection('skills')}>Skills</button>
             </li>
             <li className="nav-item">

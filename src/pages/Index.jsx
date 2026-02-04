@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Hero from '../components/Hero.jsx';
 import About from '../components/About.jsx';
+import Experience from '../components/Experience.jsx';
 import Education from '../components/Education.jsx';
 import Contact from '../components/Contact.jsx';
 import Footer from '../components/Footer.jsx';
@@ -11,6 +12,7 @@ import '../styles/Index.css'
 const Index = () => {
   const [visibleSections, setVisibleSections] = useState({
     about: false,
+    experience: false,
     skills: false,
     education: false,
     projects: false,
@@ -27,7 +29,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'skills', 'education', 'projects', 'contact'];
+      const sections = ['about', 'experience', 'skills', 'education', 'projects', 'contact'];
       
       sections.forEach(section => {
         const element = document.getElementById(section);
@@ -48,6 +50,7 @@ const Index = () => {
     <main className="main-content">
       <Hero />
       <About />
+      <Experience />
       <Education />
       <Projects/>
       <Contact />
